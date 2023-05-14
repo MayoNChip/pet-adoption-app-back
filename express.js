@@ -30,6 +30,10 @@ app.use(cors());
 
 /////////ROUTES/////////
 
+app.get("/", (res, req) => {
+	res.send("Healthy");
+});
+
 app.use("/upload", require("./routes/upload"));
 // app.use(express.static(`${__dirname}/public/`));
 
