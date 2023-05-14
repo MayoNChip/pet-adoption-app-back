@@ -26,7 +26,7 @@ app.use(
 
 /////////settings section/////////
 
-app.use(cors());
+app.use(cors({ origin: "https://pet-adoption-app-front.vercel.app/" }));
 
 /////////ROUTES/////////
 
